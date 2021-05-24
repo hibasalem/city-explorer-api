@@ -1,12 +1,12 @@
 "use strict"
 
-require('dotenv').config();
-const { response } = require('express');
 const express = require('express');
 const server = express();
 const weatherData = require('./data/weather.json')
+require('dotenv').config();
 
-const PORT = 3001;
+const PORT = process.env.PORT
+server.use(cors());s
 
 server.get('/', (req, res) => {
     res.status(200).res.send('home route')
