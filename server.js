@@ -19,7 +19,7 @@ server.get('/dataTest', (req, res) => {
 class ForeCast {
     constructor(item) {
         this.date = item.valid_date;
-        this.description = item.weather.description;
+        this.description = `Low of ${item.low_temp}, high of ${item.max_temp} with ${item.weather.description}`;
         // this.description = ` low temp ${weatherData.data.low_temp}, max_temp ${weatherData.data.max_temp} with ${weatherData.data.description} wind spd ${weatherData.data.wind_spd} clouds ${weatherData.data.clouds} `;
     }
 }
