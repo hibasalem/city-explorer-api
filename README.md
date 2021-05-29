@@ -92,3 +92,14 @@ Start time:***4:35pm***
 Finish time: ***4:55 pm***
 
 Actual time needed to complete: ***20 min***
+- - - 
+
+Name of feature: ***#7 cahce ***
+
+Estimate of time needed to complete: ***1 hour***
+
+Start time:***5:25pm***
+
+Finish time: ***5:45pm***
+
+Actual time needed to complete: ***20 min***

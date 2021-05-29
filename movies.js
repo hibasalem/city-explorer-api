@@ -1,5 +1,9 @@
 const axios = require('axios');
 
+
+let inMemory = {};
+
+
 class Movie {
     constructor(item) {
         this.title = item.original_title;
@@ -8,11 +12,11 @@ class Movie {
         this.totalVotes = item.vote_count;
         this.popularity = item.popularity;
         this.releasedOn = item.release_date;
-        if (item.poster_path){
+        if (item.poster_path) {
             this.imageUrl = `https://image.tmdb.org/t/p/w500/${item.poster_path}`;
         }
     }
-    
+
 }
 function moviesHandler(req, res) {
 
@@ -20,19 +24,28 @@ function moviesHandler(req, res) {
     let movieCityName = req.query.city_name;
 
     const movieBackUrl = `https://api.themoviedb.org/3/search/movie?api_key=${moviesKey}&query=${movieCityName}`;
-    axios
-        .get(movieBackUrl)
-        .then(movieResult => {
 
-            let moviesArr = movieResult.data.results.map(item => {
-                return new Movie(item);
+    if (inMemory[movieCityName] !== undefined) {
+
+        res.send(inMemory[movieCityName])
+
+    } else {
+
+        axios
+            .get(movieBackUrl)
+            .then(movieResult => {
+
+                let moviesArr = movieResult.data.results.map(item => {
+                    return new Movie(item);
+                })
+                res.send(moviesArr);
+
+                inMemory[movieCityName] = moviesArr;
             })
-            res.send(moviesArr);
-
-        })
-        .catch(error => {
-            res.status(500).send(`error in movie data ${error}`);
-        });
+            .catch(error => {
+                res.status(500).send(`error in movie data ${error}`);
+            });
+    }
 
 };
 
