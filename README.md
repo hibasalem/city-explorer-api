@@ -82,3 +82,13 @@ Finish time: --
 Actual time needed to complete: ***4 hours***
 
 - - - 
+
+Name of feature: ***#6 add modules ***
+
+Estimate of time needed to complete: ***1:30 hours***
+
+Start time:***4:35pm***
+
+Finish time: ***4:55 pm***
+
+Actual time needed to complete: ***20 min***
