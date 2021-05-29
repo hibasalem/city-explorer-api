@@ -1,32 +1,84 @@
 # city-explorer-api
 
 **Author**: Hibasalem
-**Version**: 1.0.0
+**Version**: 1.3.0
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+this project is a practice project for week 2 of 301 course at asac
+
 
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+ technologies  : js , css , reactjs , booststrap , expressjs , nodejs
+
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+23-05-2021 - Application now has a fully-functional express server 
+25-05-2021 - added whether api
+28-5-2021  - added movies feature 
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
 - - - 
-Name of feature: create api server
+- - - 
 
-Estimate of time needed to complete: 4 hours
+Name of feature: ***#1 Set up your React repository & API keys.***
 
-Start time: 3:00
+Estimate of time needed to complete: ***30 min*** 
+
+Start time: ***3:00 ***
+
+Finish time: ***3:45***
+
+Actual time needed to complete: *** 45 min ***
+
+- - - 
+
+Name of feature: ***#2 Set up your React repository & API keys.***
+
+Estimate of time needed to complete: ***2 hours*** 
+
+Start time: ***4:00***
+
+Finish time: ***--***
+
+Actual time needed to complete: *** 4 hours***
+
+- - - 
+Name of feature: ***#3 create api server***
+
+Estimate of time needed to complete: ***4 hours***
+
+Start time:***3:00***
 
 Finish time: --
 
-Actual time needed to complete: 12 hours
+Actual time needed to complete: ***12 hours***
+- - -
+Name of feature: ***#4 external whether api server***
+
+Estimate of time needed to complete: ***4 hours***
+
+Start time: ***11:00 pm***
+
+Finish time: ***4:00 am***
+
+Actual time needed to complete: ***5 hours***
+
+- - -
+
+Name of feature: ***#5 external whether api server***
+
+Estimate of time needed to complete: ***4 hours***
+
+Start time:***4:00am***
+
+Finish time: --
+
+Actual time needed to complete: ***4 hours***
+
+- - - 
